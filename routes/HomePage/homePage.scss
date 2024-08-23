@@ -1,0 +1,85 @@
+@import "../../src/responsive.scss";
+
+.homepage{
+    display: flex;
+    // justify-content: center;
+    height: 110%;
+
+    .textContainer{
+        flex: 3;
+    
+        // h1{
+        //     padding-right: 100px;
+        // }
+
+        // p{
+        //     padding-right: 100px;
+        // }
+        .title{
+            font-size: 64px;
+
+            @include lg{
+                font-size: 48px;
+            }
+        }
+
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            padding-top: 100px;
+            padding-right: 100px;
+            height: 100%;
+            // background-color: red;
+            gap: 50px;
+            
+            @include md{
+                padding: 0;
+            }
+
+            @include sm{
+                justify-content: flex-start;
+            }
+        }
+
+        .boxes{
+            display: flex;
+            gap: 120px;
+            
+            .box{
+                h1{
+                    @include lg{
+                        font-size: 32px;
+                    }
+                    font-size: 36px;
+                }
+    
+                h2{
+                    font-size: 20px;
+                    font-weight: 300px;
+                }
+            }
+
+            @include sm{
+                display: none;
+            }
+        }
+    }
+
+    .imgContainer{
+        flex: 2;
+        position: relative;
+        background-color: #fcf5f3;
+        height: 100%;
+
+        @include md{
+            display: none;
+        }
+
+        img{
+            width: 115%;
+            right: 0;
+            position: absolute;
+
+        }
+    }
+}
