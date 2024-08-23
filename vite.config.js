@@ -16,14 +16,14 @@ export default defineConfig({
     // Configure the dev server to handle routing
     historyApiFallback: true,
   },
-  build: {
-    rollupOptions: {
-      // Ensure that all routes fallback to index.html in production
-      output: {
-        entryFileNames: 'index.html',
-        chunkFileNames: 'assets/[name].js',
-        assetFileNames: 'assets/[name].[ext]',
-      },
-    },
-  },
+  // build: {
+  //   rollupOptions: {
+  //     // Ensure that all routes fallback to index.html in production
+  //     output: {
+  //       entryFileNames: 'index.html',
+  //       chunkFileNames: 'assets/[name].js',
+  //       assetFileNames: 'assets/[name].[ext]',
+  //     },
+  //   },
+  // },
 });
